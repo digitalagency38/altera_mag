@@ -1,0 +1,240 @@
+.card {
+    &__top {
+        display: flex;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+    &__l-side {
+        background: #EEF2F3;
+        width: calc(50% - 15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        font-size: 0;
+        @media all and (max-width: 1023px) {
+            padding: 35px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }  
+    &__r-side {
+        width: calc(50% - 15px);
+        @media all and (max-width: 1023px) {
+            width: 100%;
+        }
+    }
+    &__amt {
+        font-family: 'Ubuntu', sans-serif;
+        background: #8AC44B;
+        padding: 10px 15px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+        color: #FFFFFF;
+        @media all and (max-width: 1023px) {
+            display: none;
+        }
+    }
+    &__h1 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-family: 'Poiret One', cursive;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        &.mob {
+            display: none;
+        }
+        @media all and (max-width: 1023px) {
+            display: none;
+            &.mob {
+                display: block;
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-size: 28px;
+                line-height: 33px;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        @media all and (max-width: 1023px) {
+            justify-content: space-between;
+        }
+    }
+    &__prices {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        @media all and (max-width: 1023px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+        &--price {
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 41px;
+            color: #000000;
+            margin-right: 10px;
+            @media all and (max-width: 1023px) {
+                margin-right: 0;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        &--price-old {
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 34px;
+            text-decoration-line: line-through;
+            color: #CCCCCC;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    &__amount {
+        width: 100px;
+        height: 45px;
+        background: #FFFFFF;
+        position: relative;
+        border: 1px solid #CCCCCC;
+        .qty::-webkit-outer-spin-button,
+        .qty::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+        .qty {
+            width: 65px;
+            border: 0;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #000000;
+            padding: 14px 15px;
+            background: none;
+        }
+        .product__quantity_minus {
+            position: absolute;
+            right: 15px;
+            bottom: 5px;
+            width: 12px;
+            height: 12px;
+            border: 0;
+            cursor: pointer;
+            background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 7L11.7071 1.61173C12.0976 1.24303 12.0976 0.645236 11.7071 0.27653C11.3166 -0.0921769 10.6834 -0.0921769 10.2929 0.27653L6 4.32959L1.70711 0.27653C1.31658 -0.0921769 0.683417 -0.0921769 0.292893 0.27653C-0.0976311 0.645236 -0.0976311 1.24303 0.292893 1.61173L6 7Z' fill='black'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            transition: all .3s ease-out;
+            svg {
+                display: none;
+            }
+            &:hover {
+                background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 7L11.7071 1.61173C12.0976 1.24303 12.0976 0.645236 11.7071 0.27653C11.3166 -0.0921769 10.6834 -0.0921769 10.2929 0.27653L6 4.32959L1.70711 0.27653C1.31658 -0.0921769 0.683417 -0.0921769 0.292893 0.27653C-0.0976311 0.645236 -0.0976311 1.24303 0.292893 1.61173L6 7Z' fill='%230095D9'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            }
+        }
+        .product__quantity_plus {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            border: 0;
+            background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 0L11.7071 5.38827C12.0976 5.75697 12.0976 6.35476 11.7071 6.72347C11.3166 7.09218 10.6834 7.09218 10.2929 6.72347L6 2.67041L1.70711 6.72347C1.31658 7.09218 0.683417 7.09218 0.292893 6.72347C-0.0976311 6.35476 -0.0976311 5.75697 0.292893 5.38827L6 0Z' fill='black'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            transition: all .3s ease-out;
+            svg {
+                display: none;
+            }
+            &:hover {
+                background: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 0L11.7071 5.38827C12.0976 5.75697 12.0976 6.35476 11.7071 6.72347C11.3166 7.09218 10.6834 7.09218 10.2929 6.72347L6 2.67041L1.70711 6.72347C1.31658 7.09218 0.683417 7.09218 0.292893 6.72347C-0.0976311 6.35476 -0.0976311 5.75697 0.292893 5.38827L6 0Z' fill='%230095D9'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            }
+        }
+    }
+    &__list {
+        margin-bottom: 30px;
+        &--item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #EEF2F3;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 10px;
+                }
+            }
+            @media all and (max-width: 1023px) {
+                padding: 12px 10px;
+            }
+        }
+        &--title {
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            color: #000000;
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        &--link {
+            font-family: 'Ubuntu', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration-line: underline;
+            color: #0095D9;
+            flex: 0 0 74px;
+            margin-left: 10px;
+            &:hover {
+                text-decoration: none;
+                }
+                @media all and (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__add-card {
+        border: 2px solid #FF8006;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 20px 60px;
+        background: #FF8006;
+        border-radius: 500px;
+        transition: all .3s ease-out;
+        &:hover {
+            background: #fff;
+            color: #ff8006;
+        }
+        @media all and (max-width: 580px) {
+            width: 100%;
+        }
+    }
+}
