@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu:wght@300;400;500;700&display=swap&_v=20221104092252" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?_v=20221104092252">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221104092252"></script>
+    <script src="files/responsive.min.js?_v=20221104092252"></script>
+    <script>
+        
+      $(function () {
+        setTimeout(function() {
+          $('#responsiveTabsDemo').responsiveTabs({
+            startCollapsed: 'accordion'
+          });
+        }, 100)
+      });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div class="cart center_block">
+    <h1 class="cart__h1">Корзина</h1>
+    <div class="cart__prod">
+        <div class="cart__top">
+            <div class="cart__top--title">Товар</div>
+            <div class="cart__top--title">Цена</div>
+            <div class="cart__top--title">Количество</div>
+            <div class="cart__top--title">Стоимость</div>
+            <div class="cart__top--title"></div>
+        </div>
+        <div class="cart__block">
+            <div class="cart__block--item">
+                <picture><source srcset="./img/img3.webp" type="image/webp"><img src="./img/img3.jpg" alt=""></picture>
+                <div class="cart__block--tit">Harvia Cilindro PС70 VH белая, печь электрическая 7 кВт</div>
+            </div>
+            <div class="cart__block--item">29 640 ₽</div>
+            <div class="cart__block--item">
+                <div class="quantity product__quantity">
+                    <button type="button" class="product__quantity_button product__quantity_minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="3" viewBox="0 0 10 3" fill="none">
+                            <path d="M0 0.5H10V2.5H0V0.5Z" fill="#333333"></path>
+                        </svg>
+                    </button>
+                    <input type="number" id="quantity_6360b676dcbaf" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" placeholder="" inputmode="numeric" autocomplete="off">
+                    <button type="button" class="product__quantity_button product__quantity_plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                            <path d="M0 4.78571H10V6.21429H0V4.78571Z" fill="#333333"></path>
+                            <path d="M4.28571 10.5V0.5L5.71429 0.5L5.71429 10.5H4.28571Z" fill="#333333"></path>
+                        </svg>
+                    </button>
+                </div>  
+            </div>
+            <div class="cart__block--item">290 640 ₽</div>
+            <div class="cart__block--item cart__block--del">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.408 12L19.708 5.71C19.8963 5.5217 20.0021 5.2663 20.0021 5C20.0021 4.7337 19.8963 4.47831 19.708 4.29C19.5197 4.1017 19.2643 3.99591 18.998 3.99591C18.7317 3.99591 18.4763 4.1017 18.288 4.29L11.998 10.59L5.70799 4.29C5.51968 4.1017 5.26429 3.99591 4.99799 3.99591C4.73168 3.99591 4.47629 4.1017 4.28799 4.29C4.09968 4.47831 3.99389 4.7337 3.99389 5C3.99389 5.2663 4.09968 5.5217 4.28799 5.71L10.588 12L4.28799 18.29C4.19426 18.383 4.11986 18.4936 4.06909 18.6154C4.01833 18.7373 3.99219 18.868 3.99219 19C3.99219 19.132 4.01833 19.2627 4.06909 19.3846C4.11986 19.5064 4.19426 19.617 4.28799 19.71C4.38095 19.8037 4.49155 19.8781 4.61341 19.9289C4.73527 19.9797 4.86597 20.0058 4.99799 20.0058C5.13 20.0058 5.2607 19.9797 5.38256 19.9289C5.50442 19.8781 5.61502 19.8037 5.70799 19.71L11.998 13.41L18.288 19.71C18.3809 19.8037 18.4915 19.8781 18.6134 19.9289C18.7353 19.9797 18.866 20.0058 18.998 20.0058C19.13 20.0058 19.2607 19.9797 19.3826 19.9289C19.5044 19.8781 19.615 19.8037 19.708 19.71C19.8017 19.617 19.8761 19.5064 19.9269 19.3846C19.9776 19.2627 20.0038 19.132 20.0038 19C20.0038 18.868 19.9776 18.7373 19.9269 18.6154C19.8761 18.4936 19.8017 18.383 19.708 18.29L13.408 12Z" fill="#F04438"/>
+                </svg>
+            </div>
+        </div>
+        <div class="cart__block">
+            <div class="cart__block--item">
+                <picture><source srcset="./img/img3.webp" type="image/webp"><img src="./img/img3.jpg" alt=""></picture>
+                <div class="cart__block--tit">Ведро Бадейка 5л, А</div>
+            </div>
+            <div class="cart__block--item">29 640 ₽ <span>1590 Р</span></div>
+            <div class="cart__block--item">
+                <div class="quantity product__quantity">
+                    <button type="button" class="product__quantity_button product__quantity_minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="3" viewBox="0 0 10 3" fill="none">
+                            <path d="M0 0.5H10V2.5H0V0.5Z" fill="#333333"></path>
+                        </svg>
+                    </button>
+                    <input type="number" id="quantity_6360b676dcbaf" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" size="4" placeholder="" inputmode="numeric" autocomplete="off">
+                    <button type="button" class="product__quantity_button product__quantity_plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none">
+                            <path d="M0 4.78571H10V6.21429H0V4.78571Z" fill="#333333"></path>
+                            <path d="M4.28571 10.5V0.5L5.71429 0.5L5.71429 10.5H4.28571Z" fill="#333333"></path>
+                        </svg>
+                    </button>
+                </div>  
+            </div>
+            <div class="cart__block--item">290 640 ₽</div>
+            <div class="cart__block--item cart__block--del">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.408 12L19.708 5.71C19.8963 5.5217 20.0021 5.2663 20.0021 5C20.0021 4.7337 19.8963 4.47831 19.708 4.29C19.5197 4.1017 19.2643 3.99591 18.998 3.99591C18.7317 3.99591 18.4763 4.1017 18.288 4.29L11.998 10.59L5.70799 4.29C5.51968 4.1017 5.26429 3.99591 4.99799 3.99591C4.73168 3.99591 4.47629 4.1017 4.28799 4.29C4.09968 4.47831 3.99389 4.7337 3.99389 5C3.99389 5.2663 4.09968 5.5217 4.28799 5.71L10.588 12L4.28799 18.29C4.19426 18.383 4.11986 18.4936 4.06909 18.6154C4.01833 18.7373 3.99219 18.868 3.99219 19C3.99219 19.132 4.01833 19.2627 4.06909 19.3846C4.11986 19.5064 4.19426 19.617 4.28799 19.71C4.38095 19.8037 4.49155 19.8781 4.61341 19.9289C4.73527 19.9797 4.86597 20.0058 4.99799 20.0058C5.13 20.0058 5.2607 19.9797 5.38256 19.9289C5.50442 19.8781 5.61502 19.8037 5.70799 19.71L11.998 13.41L18.288 19.71C18.3809 19.8037 18.4915 19.8781 18.6134 19.9289C18.7353 19.9797 18.866 20.0058 18.998 20.0058C19.13 20.0058 19.2607 19.9797 19.3826 19.9289C19.5044 19.8781 19.615 19.8037 19.708 19.71C19.8017 19.617 19.8761 19.5064 19.9269 19.3846C19.9776 19.2627 20.0038 19.132 20.0038 19C20.0038 18.868 19.9776 18.7373 19.9269 18.6154C19.8761 18.4936 19.8017 18.383 19.708 18.29L13.408 12Z" fill="#F04438"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+        </main>
+    </div>
+    <script src="js/app.min.js?_v=20221104092252"></script>   
+</body>
+</html>
