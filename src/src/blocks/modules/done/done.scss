@@ -1,0 +1,63 @@
+.done {
+    &__h1 {
+        margin: 0;
+        font-family: 'Poiret One', cursive;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 37px;
+        color: #0095D9;
+        margin-bottom: 30px;
+        @media all and (max-width: 1023px) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+    &__text {
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        color: #454545;
+        margin-bottom: 30px;
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    h2 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #454545;
+    }
+    &__back {
+        transition: all .3s ease-out;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #0095D9;
+        background: #0095D9;
+        border-radius: 500px;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 11px 35px;
+        &:hover {
+            color: #0095d9;
+            background: #fff;
+        }
+    }
+}
