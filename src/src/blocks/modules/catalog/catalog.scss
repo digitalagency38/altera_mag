@@ -1,0 +1,54 @@
+.catalog {
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        overflow: hidden;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+        }
+    }
+    &__l-side {
+        width: 270px;
+        margin-right: 30px;
+        flex: 0 0 270px;
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            flex: none;
+            margin-right: 0;
+        }
+    }
+    &__r-side {
+        width: 100%;
+        .card__list--block {
+            width: calc(33.3% - 32px);
+            @media all and (max-width: 1180px) {
+                width: calc(50% - 32px);
+            }
+            @media all and (max-width: 1023px) {
+                width: calc(33.3% - 32px);
+            }
+            @media all and (max-width: 768px) {
+                width: calc(50% - 32px);
+            }
+            @media all and (max-width: 580px) {
+                width: 100%;
+            }
+        }
+    }
+    &__h1 {
+        margin: 0;
+        margin-bottom: 35px;
+        font-family: 'Poiret One', cursive;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 37px;
+        color: #0095D9;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+    }
+}
